@@ -82,7 +82,7 @@ func (h *API) handleAPIResource(parts []string, req *http.Request, w http.Respon
 				http.Error(w, "Not Supported", http.StatusMethodNotAllowed)
 				return
 			}
-			list, err := lister.List(nil)
+			list, err := lister.List(Context{})
 			if err != nil {
 
 				http.Error(w, "Idk!", http.StatusInternalServerError)

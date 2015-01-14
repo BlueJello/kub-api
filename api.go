@@ -15,5 +15,5 @@ func splitPath(path string) []string {
 	return strings.Split(path, "/")
 }
 
-// type Context struct {
-// }
+type Context struct {
+}
